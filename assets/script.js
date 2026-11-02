@@ -103,7 +103,7 @@ document.querySelectorAll(".reveal").forEach(x => io.observe(x));
   const grid = $('framesGrid');
   if (grid) {
     const F = P.filter(p => !p.slide).slice(0, 6);
-    grid.innerHTML = F.map((p, i) => `<a class="frame f${i + 1}" href="gallery.html#${p.file.replace('.webp', '')}" style="--d:${i * 90}ms"><img src="${thumb(p)}" alt="${p.caption}" loading="lazy" width="${Math.round(p.w * .4)}" height="${Math.round(p.h * .4)}"><span>${p.caption}</span></a>`).join('');
+    grid.innerHTML = F.map((p, i) => `<a class="frame f${i + 1}" href="gallery#${p.file.replace('.webp', '')}" style="--d:${i * 90}ms"><img src="${thumb(p)}" alt="${p.caption}" loading="lazy" width="${Math.round(p.w * .4)}" height="${Math.round(p.h * .4)}"><span>${p.caption}</span></a>`).join('');
     const tot = $('framesTotal'); if (tot) tot.textContent = P.length;
     const ob = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); ob.unobserve(e.target); } }), { threshold: .15 });
     grid.querySelectorAll('.frame').forEach(f => ob.observe(f));
@@ -166,7 +166,7 @@ document.querySelectorAll(".reveal").forEach(x => io.observe(x));
 // then paste its ID (the part after /f/ in the endpoint URL) below, e.g. FORMSPREE_ID = 'xyzabcd'.
 // Until then, "Send" opens the visitor's email app with the message filled in.
 (() => {
-  const FORMSPREE_ID = '';
+  const FORMSPREE_ID = 'moeepraj';
   const form = document.getElementById('contactForm');
   if (!form) return;
   const status = document.getElementById('cfStatus');
@@ -215,5 +215,5 @@ document.querySelectorAll(".reveal").forEach(x => io.observe(x));
     const f = box.querySelector('input[name=name]'); if (f) setTimeout(() => f.focus({ preventScroll: true }), smooth ? 600 : 50);
   };
   if (location.hash === '#contact') addEventListener('load', () => go(false));
-  document.querySelectorAll('a[href="index.html#contact"], a[href="#contact"]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); history.replaceState(null, '', '#contact'); go(true); }));
+  document.querySelectorAll('a[href="./#contact"], a[href="#contact"]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); history.replaceState(null, '', '#contact'); go(true); }));
 })();
