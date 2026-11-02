@@ -1,0 +1,91 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>After Hours — Zahidul Islam</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/style.css"></head><body class="arcade-page">
+<header class="arcadehead"><a href="index.html">← HOME</a><span>LIVES: ♥ ♥ ♥</span><span>MODE: OFF_DUTY</span></header>
+<main>
+
+<section class="arcadehero arcade-v6">
+  <div class="ah-copy">
+    <h1>AFTER<br>HOURS_</h1>
+    <p class="ah-lead">During my off time, I love spending time with my family, cooking, and playing games.</p>
+  </div>
+  <div class="ah-visual">
+    <figure class="ah-photo"><img src="assets/images/babia-closeup.webp" alt="Babia, a fluffy white and cream cat, looking at the camera"></figure>
+    <div class="ah-screen"><video src="assets/images/dota-menu.mp4" poster="assets/images/dota-menu-poster.webp" muted loop playsinline autoplay aria-label="Dota 2 main menu"></video><span>NOW PLAYING</span></div>
+    <div class="pixel-note">BABIA: portfolio supervisor<br>bird-watch skill: 99</div>
+  </div>
+</section>
+
+<!-- ============ WORLD 1: BABIA ============ -->
+<section id="cat-zone" class="arcade-zone cat-zone">
+<div class="zone-title solo"><h2>MEET BABIA</h2><p>The quiet, fluffy member of the family.</p></div>
+
+<div class="babia-intro">
+  <div class="babia-stack" id="babiaFrame">
+    <figure class="ps p1"><img src="assets/images/babia-chair.webp" alt="Babia sitting upright on a chair outside" style="object-position:50% 12%"><figcaption>on bird duty</figcaption></figure>
+    <figure class="ps p2"><img src="assets/images/babia-nap.webp" alt="Babia asleep by the window" style="object-position:40% 60%"><figcaption>sleep: maxed</figcaption></figure>
+    <figure class="ps p3"><img src="assets/images/babia-closeup.webp" alt="Close-up of Babia's face" style="object-position:50% 35%"><figcaption>the stare</figcaption></figure>
+  </div>
+  <div class="babia-side">
+    <div class="babia-bubble" aria-live="polite"><p id="babiaType" class="babia-type"></p></div>
+    <dl class="char-sheet">
+      <div><dt>PERSONALITY</dt><dd>Shy · gentle</dd></div>
+      <div><dt>FAV SPOT</dt><dd>By the window</dd></div>
+      <div><dt>EAT</dt><dd><span class="stat-bar" style="--v:95%"></span></dd></div>
+      <div><dt>SLEEP</dt><dd><span class="stat-bar" style="--v:100%"></span></dd></div>
+      <div><dt>BIRD WATCH</dt><dd><span class="stat-bar" style="--v:99%"></span></dd></div>
+      <div><dt>SOCIAL</dt><dd><span class="stat-bar" style="--v:35%"></span></dd></div>
+    </dl>
+  </div>
+</div>
+
+<div class="babia-game">
+  <div class="bw-head"><h3>BABIA'S BIRD WATCH</h3><p class="paw-note">Play as Babia: chase birds, grab snacks, dodge the vacuum.</p></div>
+  <div class="bw-hud">
+    <span>SCORE <b id="bwScore">00000</b></span>
+    <span>BEST <b id="bwBest">00000</b></span>
+    <span>LVL <b id="bwLevel">1</b></span>
+    <span class="bw-full">FULL <i class="bw-meter"><i id="bwEnergy"></i></i></span>
+  </div>
+  <div class="bw-screen">
+    <canvas id="babiaCanvas" tabindex="0" aria-label="Babia's Bird Watch game. Use arrow keys to move and space to jump."></canvas>
+    <div class="bw-overlay" id="bwOverlay"></div>
+  </div>
+  <div class="bw-pad" aria-label="Touch controls">
+    <button data-pad="left" aria-label="Move left">◀</button>
+    <button data-pad="jump" class="jump" aria-label="Jump">JUMP</button>
+    <button data-pad="right" aria-label="Move right">▶</button>
+  </div>
+</div>
+
+<div class="treat-shop">
+  <div><small>TREAT SHOP</small><h3>Buy Babia a treat 🐟</h3><p>He works hard supervising this portfolio. Tap for a virtual treat, or chip in for a real one on Ko-fi.</p></div>
+  <div class="treat-row"><button class="pixel-btn" id="treatBtn">GIVE A TREAT 🐟</button><span class="scoreline">Treats today: <b id="treatScore">0</b></span><a class="pixel-btn secondary" href="https://ko-fi.com/babiathecat" target="_blank" rel="noopener">TREAT FUND ON KO-FI ↗</a></div>
+</div>
+</section>
+
+<!-- ============ WORLD 2: DOTA 2 ============ -->
+<section id="dota-zone" class="arcade-zone dota-zone dota-v6">
+<div class="zone-title"><div><h2>SOMETIMES I ALSO PLAY GAMES.</h2></div>
+<p>Mainly <b>Dota 2</b>, a popular multiplayer strategy game where two teams of five heroes fight to destroy each other's base. I play <b>support</b>: the role that places vision, stacks camps, and keeps everyone else alive. Honestly, it's not that different from analytics.</p></div>
+
+<div class="dota-show">
+  <div class="dota-monitor"><video src="assets/images/dota-menu.mp4" poster="assets/images/dota-menu-poster.webp" muted loop playsinline autoplay aria-label="Dota 2 main menu with The International heroes"></video></div>
+</div>
+
+<div class="dota-lower">
+  <div class="fav-heroes">
+    <small>FAVORITE HEROES</small>
+    <div class="hero-row">
+    <figure class="hero-tile" style="--i:0"><div class="hero-img" data-init="CM"><img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crystal_maiden.png" data-alt-src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/crystal_maiden_full.png" alt="Crystal Maiden" loading="lazy"></div><figcaption>Crystal Maiden</figcaption></figure>
+    <figure class="hero-tile" style="--i:1"><div class="hero-img" data-init="WD"><img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/witch_doctor.png" data-alt-src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/witch_doctor_full.png" alt="Witch Doctor" loading="lazy"></div><figcaption>Witch Doctor</figcaption></figure>
+    <figure class="hero-tile" style="--i:2"><div class="hero-img" data-init="AA"><img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ancient_apparition.png" data-alt-src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/ancient_apparition_full.png" alt="Ancient Apparition" loading="lazy"></div><figcaption>Ancient Apparition</figcaption></figure>
+    <figure class="hero-tile" style="--i:3"><div class="hero-img" data-init="DW"><img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dark_willow.png" data-alt-src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/dark_willow_full.png" alt="Dark Willow" loading="lazy"></div><figcaption>Dark Willow</figcaption></figure>
+    <figure class="hero-tile" style="--i:4"><div class="hero-img" data-init="EN"><img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/enigma.png" data-alt-src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/heroes/enigma_full.png" alt="Enigma" loading="lazy"></div><figcaption>Enigma</figcaption></figure>
+    </div>
+  </div>
+  <article class="dota-card role"><small>ROLE</small><h3>Position 4 / 5</h3><p>Support. I'd rather set up the play than take the last hit: vision, timing, and keeping the team alive.</p></article>
+</div>
+
+</section>
+</main>
+
+<footer class="site-foot"><span>© 2026 Zahidul Islam · Tulsa, OK</span><div class="social"><a href="index.html#contact" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 5h18v14H3z M3 6l9 7 9-7"/></svg><span>Email</span></a><a href="https://www.linkedin.com/in/zahidul-islam007" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>LinkedIn</span></a><a href="https://github.com/islzahid-BA" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>GitHub</span></a></div></footer><script src="assets/script.js"></script><script src="assets/babia.js"></script></body></html>
