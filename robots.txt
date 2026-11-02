@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://islzahid-ba.github.io/sitemap.xml

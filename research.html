@@ -1,0 +1,98 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Digital Health Engagement Score (INFORMS 2026), explainable brain tumor decision support, and auditing hospital course summaries with EHR evidence."><link rel="canonical" href="https://islzahid-ba.github.io/research"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png"><meta name="theme-color" content="#172018"><meta property="og:type" content="website"><meta property="og:site_name" content="Zahidul Islam"><meta property="og:title" content="Research — Zahidul Islam"><meta property="og:description" content="Digital Health Engagement Score (INFORMS 2026), explainable brain tumor decision support, and auditing hospital course summaries with EHR evidence."><meta property="og:url" content="https://islzahid-ba.github.io/research"><meta property="og:image" content="https://islzahid-ba.github.io/assets/images/og-image.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><title>Research — Zahidul Islam</title><link rel="stylesheet" href="assets/style.css"></head><body class="project-page"><header class="site-head"><a class="logo" href="./" aria-label="Home">ZI.</a><nav class="main-nav"><a href="about">About</a><a class="active" href="work">Work</a><a href="play-analyst">Play Analyst</a><div class="nav-more"><button class="nav-more-btn" type="button" aria-expanded="false" aria-haspopup="true">Beyond Work <span aria-hidden="true">▾</span></button><div class="nav-menu"><a href="photography"><b>Photography</b></a><a href="after-hours"><b>After Hours</b></a></div></div></nav></header><main>
+<section class="project-hero research-hero">
+<div><p class="kicker">RESEARCH</p>
+<h1>Applied analytics research.</h1>
+<p>Three studies with one thread: using data and AI in health care in ways people can check, explain, and trust.</p></div>
+<nav class="r-index" aria-label="Research projects">
+<a href="#dhes"><span class="r-tag done">Published</span>Digital Health Engagement Score</a>
+<a href="#brain"><span class="r-tag on">Ongoing</span>Explainable Brain Tumor Decision Support</a>
+<a href="#bhc"><span class="r-tag on">Ongoing</span>Auditing Brief Hospital Course Summaries</a>
+</nav>
+</section>
+
+<article class="r-block" id="dhes">
+<header class="r-head"><span class="r-tag done">Published · INFORMS 2026</span><h2>Digital Health Engagement Score (DHES)</h2>
+<p class="r-sub">Does a person’s digital engagement relate to their health? An 11-item score that combines digital access, digital literacy, and digital health-tool use.</p></header>
+<div class="r-grid">
+<div class="r-text">
+<h3>In short</h3>
+<p>Health care is going digital, but there is no widely accepted way to measure digital engagement across several dimensions at once. We built and tested the DHES using HINTS 7, a national survey of 6,778 US adults, and examined how it relates to general health and psychological distress.</p>
+<h3>Key findings</h3>
+<ul>
+<li>The score predicted poor/fair health (AUC 0.707) and high psychological distress (AUC 0.723) on held-out test data.</li>
+<li>Poor/fair health was 30.4% in the lowest DHES quartile vs. 10.5% in the highest, roughly 3.7 times the odds.</li>
+<li><b>Digital literacy</b> was the most consistent driver, about 21% of total model importance on average.</li>
+</ul>
+<p><a class="btn" href="https://submissions.mirasmart.com/InformsAnnual2026/Itinerary/PresentationDetail.aspx?evdid=5925" target="_blank" rel="noopener">View the INFORMS presentation ↗</a></p>
+</div>
+<aside class="r-facts">
+<div><b>Data</b>HINTS 7 (N = 6,778)</div>
+<div><b>Theory</b>Digital Divide Theory · DeLone &amp; McLean IS Success Model · eHealth Literacy 3.0</div>
+<div><b>Methods</b>Exploratory factor analysis · OLS &amp; logistic regression (HC3) · Random Forest · XGBoost · SHAP · Bayesian regression</div>
+</aside>
+</div>
+<details class="r-more"><summary>Read the full abstract</summary>
+<p><b>Background:</b> The increasing digitalization of health care has intensified interest in understanding whether individuals’ digital engagement profiles are associated with population health outcomes. However, no widely accepted multidimensional measure currently integrates digital access, digital literacy, and digital health-tool use for population-level analysis of health outcomes.</p>
+<p><b>Objective:</b> This study developed and internally evaluated the Digital Health Engagement Score (DHES), an 11-item composite measure spanning Digital Access, Digital Literacy, and Digital Health-Tool Use, and examined its association with general health and psychological distress among US adults.</p>
+<p><b>Methods:</b> The DHES was developed from the theories of Digital Divide Theory, DeLone and McLean IS Success Model, and eHealth Literacy 3.0 and measured using HINTS 7 (N = 6,778). Exploratory factor analysis provided preliminary support for a three-factor representation of the selected items (KMO = 0.77; cumulative variance explained = 40.9%). Associations with general health and psychological distress were estimated via OLS and logistic regression with HC3 robust standard errors, adjusting for age, sex, education, income, and race/ethnicity. Predictive performance was evaluated against Random Forest and XGBoost (70:30 stratified split), feature importance was analysed at the domain level through SHAP, and uncertainty quantification was performed using Bayesian regression.</p>
+<p><b>Results:</b> In held-out test data, the domain-weighted DHES achieved AUCs of 0.707 for poor/fair general health and 0.723 for high psychological distress. After threshold optimization in the training data, balanced accuracy in the test data ranged from 0.64 to 0.67. Poor/fair health prevalence was 30.4% in the lowest DHES quartile and 10.5% in the highest quartile, corresponding to an unadjusted odds ratio of approximately 3.7. Digital Literacy was the most consistently associated domain: a 10-point increase was associated with a 0.048-point increase in general health (95% CI [0.037, 0.058]), lower odds of poor/fair health (OR = 0.912, 95% CI [0.886, 0.939]), a 0.128-point decrease in PHQ-4 distress (95% CI [−0.162, −0.094]), and lower odds of high psychological distress (OR = 0.883, 95% CI [0.853, 0.914]). In SHAP analyses, Digital Literacy accounted for 18.0%–25.2% of total model importance across outcomes, averaging 21.0%, while the three digital engagement domains combined accounted for approximately 37.1% of aggregated SHAP importance.</p>
+</details>
+</article>
+
+<article class="r-block" id="brain">
+<header class="r-head"><span class="r-tag on">Ongoing</span><h2>Explainable Brain Tumor Decision Support</h2>
+<p class="r-sub">Making an MRI tumor classifier more useful to clinicians: show where the tumor is, explain why, and summarize it in plain clinical language.</p></header>
+<div class="r-grid">
+<div class="r-text">
+<h3>The problem</h3>
+<p>Brain tumor diagnosis is slowed by radiologist shortages and uneven MRI access. Earlier work built an accurate CNN classifier (VGG16 with transfer learning) with SHAP, Guided Backpropagation, and Occlusion Sensitivity explanations. But four gaps kept it from clinical use: no tumor boundaries, sparse and slow SHAP maps, edge information never combined with SHAP, and only raw technical output.</p>
+<h3>What this project adds</h3>
+<ul>
+<li><b>ShapDensity (new method).</b> Spreads SHAP importance outward from high-scoring pixels, using Guided Backpropagation edges as barriers, to fill empty regions without crossing tumor boundaries.</li>
+<li><b>Dual-task VGG16 + U-Net.</b> Adds a segmentation branch that outlines the tumor in the same pass as classification.</li>
+<li><b>FastSHAP.</b> A lightweight surrogate that approximates SHAP in one pass, benchmarked for speed and accuracy.</li>
+<li><b>Constrained LLM summarizer.</b> Turns fixed, structured outputs into a templated report. Decision support only, never an autonomous diagnosis.</li>
+</ul>
+<h3>How it will be validated</h3>
+<p>Faithfulness (remove-and-retrain), pointing-game localization, ablation without the edge constraint, and comparison against baseline SHAP.</p>
+</div>
+<aside class="r-facts">
+<div><b>Status</b>Ongoing</div>
+<div><b>Models</b>VGG16 · U-Net · FastSHAP</div>
+<div><b>Explainability</b>SHAP · Guided Backpropagation · Occlusion Sensitivity · ShapDensity</div>
+<div><b>Output</b>Tumor label + segmentation mask + structured clinical report</div>
+</aside>
+</div>
+<figure class="r-fig"><a href="assets/images/research/brain-tumor-framework.svg" target="_blank" rel="noopener"><img src="assets/images/research/brain-tumor-framework.svg" alt="Framework: brain MRI images feed a VGG16 encoder with three branches (U-Net segmentation, classifier head, XAI inputs) producing a segmentation mask, tumor label, and ShapDensity overlay, which a constrained LLM summarizes into a structured clinical report" loading="lazy"></a></figure>
+</article>
+
+<article class="r-block" id="bhc">
+<header class="r-head"><span class="r-tag on">Ongoing</span><h2>Auditing Brief Hospital Course Summaries with Structured EHR Evidence</h2>
+<p class="r-sub">If AI summaries are graded against doctor-written notes, what happens when those notes are wrong?</p></header>
+<div class="r-grid">
+<div class="r-text">
+<h3>The problem</h3>
+<p>Large language models are being tested for writing discharge summaries. They are usually scored by how closely they match a clinician-written “reference” summary. But the Brief Hospital Course section is written by hand from a large health record, so it can leave out or misstate events. If the reference is imperfect, the scores are too.</p>
+<h3>Our approach</h3>
+<p>We treat structured EHR data as an independent source of evidence and ask a more basic question: <i>is each clinical statement supported by what was actually recorded?</i> The first study focuses on medication and treatment claims, because medication administration is recorded in detail.</p>
+<h3>Pipeline</h3>
+<ol class="r-steps">
+<li><b>Claim extraction.</b> Split summaries into small, checkable medication and treatment claims.</li>
+<li><b>Normalization.</b> Standardize drug names, routes, doses, and actions.</li>
+<li><b>Evidence retrieval.</b> Find matching medication events in the patient’s record.</li>
+<li><b>Verification.</b> Compare simple rule-based matching, biomedical retrieval, cross-encoders, and open-weight LLMs.</li>
+<li><b>Clinician review.</b> Clinicians label a stratified sample to measure accuracy and agreement.</li>
+</ol>
+<h3>Why it matters</h3>
+<p>A reproducible way to check clinical summaries against the record, a clearer picture of how often reference summaries disagree with the evidence, and insight into whether reference errors distort how we evaluate AI-written summaries.</p>
+</div>
+<aside class="r-facts">
+<div><b>Status</b>Ongoing</div>
+<div><b>Data</b>MIMIC-IV · MIMIC-IV-Note · Discharge Me! (de-identified)</div>
+<div><b>Methods</b>Clinical NLP · embedding retrieval · cross-encoder reranking · local open-weight LLMs · inter-rater reliability</div>
+<div><b>Claim labels</b>Supported · contradicted · insufficient evidence · not verifiable</div>
+</aside>
+</div>
+<figure class="r-fig"><a href="assets/images/research/bhc-framework.svg" target="_blank" rel="noopener"><img src="assets/images/research/bhc-framework.svg" alt="Framework: Discharge Me! summaries feed claim extraction and MIMIC-IV structured EHR feeds evidence retrieval; five steps (claim extraction, normalization, evidence retrieval, verification, clinician validation) assign each claim an evidence status, leading to three outputs" loading="lazy"></a></figure>
+</article>
+<section class="project-next"><a class="btn" href="work">← All work</a></section></main><footer class="site-foot"><span>© 2026 Zahidul Islam · Tulsa, OK</span><div class="social"><a href="./#contact" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 5h18v14H3z M3 6l9 7 9-7"/></svg><span>Email</span></a><a href="https://www.linkedin.com/in/zahidul-islam007" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>LinkedIn</span></a><a href="https://github.com/islzahid-BA" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>GitHub</span></a></div></footer><script src="assets/script.js"></script></body></html>
