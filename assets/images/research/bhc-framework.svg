@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 1000" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Structured-evidence auditing framework for Brief Hospital Course documentation</title>
+<desc id="d">Discharge Me! and MIMIC-IV feed a five-step audit pipeline: claim extraction, clinical normalization, evidence retrieval, claim verification, and clinician validation. Each claim is assigned an evidence status (supported, contradicted, insufficient evidence, not verifiable), leading to three research outputs.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#33414c"/></marker></defs>
+<rect width="1680" height="1000" fill="#ffffff"/>
+<rect x="30" y="72" width="180" height="46" rx="12" fill="#e7eef5" stroke="#c4d3e1"/>
+<text x="120.0" y="102.0" font-size="21" font-weight="700" fill="#1f2a33" text-anchor="middle">Data sources</text>
+<rect x="228" y="44" width="566" height="112" rx="12" fill="#eef4fa" stroke="#7d9cbc" stroke-width="1.5"/>
+<path d="M6 2h16l8 8v24H6z M22 2v8h8 M11 16h14 M11 22h14 M11 28h10" fill="none" stroke="#2f4858" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(258 82)"/>
+<path d="M318 64v72" stroke="#7d9cbc" stroke-width="1.5"/>
+<text x="340" y="92" font-size="25" font-weight="700" fill="#1f2a33" text-anchor="start">Discharge Me! (v1.3)</text>
+<text x="340" y="124" font-size="17" font-weight="400" fill="#3c4a55" text-anchor="start">Brief Hospital Course text and benchmark splits</text>
+<rect x="826" y="44" width="824" height="112" rx="12" fill="#eef4fa" stroke="#7d9cbc" stroke-width="1.5"/>
+<path d="M4 8c0-4 26-4 26 0v20c0 4-26 4-26 0z M4 8c0 4 26 4 26 0 M4 18c0 4 26 4 26 0" fill="none" stroke="#2f4858" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(860 80)"/>
+<path d="M920 64v72" stroke="#7d9cbc" stroke-width="1.5"/>
+<text x="942" y="88" font-size="25" font-weight="700" fill="#1f2a33" text-anchor="start">MIMIC-IV / MIMIC-IV-Note</text>
+<text x="942" y="116" font-size="18" font-weight="400" fill="#1f2a33" text-anchor="start">Discharge notes and structured hospital records</text>
+<text x="942" y="140" font-size="15" font-weight="400" fill="#3c4a55" text-anchor="start">medication administration, prescriptions, laboratory events, microbiology, procedures</text>
+<path d="M511 156V182H1238V156" fill="none" stroke="#33414c" stroke-width="2"/>
+<path d="M840 182V224" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="28" y="228" width="1624" height="428" rx="16" fill="#f1f7ef" stroke="#bcd5b6" stroke-width="1.5"/>
+<rect x="40" y="238" width="206" height="40" rx="12" fill="#dcebd6" stroke="#bcd5b6"/>
+<text x="143.0" y="265.0" font-size="21" font-weight="700" fill="#1f2a33" text-anchor="middle">Audit pipeline</text>
+<rect x="48" y="292" width="290" height="344" rx="12" fill="#ffffff" stroke="#8c9aa3" stroke-width="1.4"/>
+<text x="318" y="322" font-size="12" font-weight="700" fill="#7a8790" text-anchor="end">STEP 1</text>
+<path d="M6 2h16l8 8v24H6z M22 2v8h8 M11 16h14 M11 22h14 M11 28h10" fill="none" stroke="#2f4858" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(70 310)"/>
+<text x="70" y="384" font-size="21" font-weight="700" fill="#1f2a33" text-anchor="start">Claim extraction</text>
+<text x="70" y="416" font-size="16.5" font-weight="400" fill="#3c4a55" text-anchor="start">Split Brief Hospital Course</text>
+<text x="70" y="438" font-size="16.5" font-weight="400" fill="#3c4a55" text-anchor="start">text into atomic medication</text>
+<text x="70" y="460" font-size="16.5" font-weight="400" fill="#3c4a55" text-anchor="start">and treatment claims</text>
+<path d="M70 488H316" stroke="#c9d1d6" stroke-width="1.2"/>
+<text x="70" y="512" font-size="14" font-weight="700" fill="#55636d" text-anchor="start" font-style="italic">Methods</text>
+<text x="70" y="535" font-size="15.5" font-weight="400" fill="#3c4a55" text-anchor="start">clinical NLP, local</text>
+<text x="70" y="556" font-size="15.5" font-weight="400" fill="#3c4a55" text-anchor="start">open-weight LLMs</text>
+<path d="M341 464.0H365" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="369" y="292" width="290" height="344" rx="12" fill="#ffffff" stroke="#8c9aa3" stroke-width="1.4"/>
+<text x="639" y="322" font-size="12" font-weight="700" fill="#7a8790" text-anchor="end">STEP 2</text>
+<path d="M8 26a7 7 0 0 1 0-10l8-8a7 7 0 0 1 10 10l-8 8a7 7 0 0 1-10 0z M12 12l10 10" fill="none" stroke="#2f4858" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(391 310)"/>
+<circle cx="422" cy="338" r="6" fill="none" stroke="#2f4858" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="391" y="384" font-size="21" font-weight="700" fill="#1f2a33" text-anchor="start">Clinical normalization</text>
+<text x="391" y="416" font-size="16.5" font-weight="400" fill="#3c4a55" text-anchor="start">Standardize medication,</text>
+<text x="391" y="438" font-size="16.5" font-weight="400" fill="#3c4a55" text-anchor="start">route, dose, action,</text>
+<text x="391" y="460" font-size="16.5" font-weight="400" fill="#3c4a55" text-anchor="start">and timing</text>
+<path d="M391 488H637" stroke="#c9d1d6" stroke-width="1.2"/>
+<text x="391" y="512" font-size="14" font-weight="700" fill="#55636d" text-anchor="start" font-style="italic">Methods</text>
+<text x="391" y="535" font-size="15.5" font-weight="400" fill="#3c4a55" text-anchor="start">terminology normalization,</text>
+<text x="391" y="556" font-size="15.5" font-weight="400" fill="#3c4a55" text-anchor="start">rule-based parsing</text>
+<path d="M662 464.0H686" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="690" y="292" width="290" height="344" rx="12" fill="#ffffff" stroke="#8c9aa3" stroke-width="1.4"/>
+<text x="960" y="322" font-size="12" font-weight="700" fill="#7a8790" text-anchor="end">STEP 3</text>
+<path d="M15 4a11 11 0 1 1 0 22a11 11 0 1 1 0-22z M23 23l10 10" fill="none" stroke="#2f4858" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(712 310)"/>
+<text x="712" y="384" font-size="21" font-weight="700" fill="#1f2a33" text-anchor="start">Evidence retrieval</text>
+<text x="712" y="416" font-size="16.5" font-weight="400" fill="#3c4a55" text-anchor="start">Retrieve candidate</text>
+<text x="712" y="438" font-size="16.5" font-weight="400" fill="#3c4a55" text-anchor="start">structured evidence from</text>
+<text x="712" y="460" font-size="16.5" font-weight="400" fill="#3c4a55" text-anchor="start">the same hospitalization</text>
+<path d="M712 488H958" stroke="#c9d1d6" stroke-width="1.2"/>
+<text x="712" y="512" font-size="14" font-weight="700" fill="#55636d" text-anchor="start" font-style="italic">Methods</text>
+<text x="712" y="535" font-size="15.5" font-weight="400" fill="#3c4a55" text-anchor="start">structured joins, rule-based</text>
+<text x="712" y="556" font-size="15.5" font-weight="400" fill="#3c4a55" text-anchor="start">search, embedding retrieval</text>
+<path d="M983 464.0H1007" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="1011" y="292" width="290" height="344" rx="12" fill="#e6eff9" stroke="#4a72a8" stroke-width="2"/>
+<text x="1281" y="322" font-size="12" font-weight="700" fill="#7a8790" text-anchor="end">STEP 4</text>
+<path d="M18 2l13 5v10c0 9-6 15-13 18c-7-3-13-9-13-18V7z M12 18l5 5l8-9" fill="none" stroke="#2d5487" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(1033 310)"/>
+<text x="1033" y="384" font-size="21" font-weight="700" fill="#1d3557" text-anchor="start">Claim verification</text>
+<text x="1033" y="416" font-size="16.5" font-weight="400" fill="#3c4a55" text-anchor="start">Assess whether each claim</text>
+<text x="1033" y="438" font-size="16.5" font-weight="400" fill="#3c4a55" text-anchor="start">is supported by the</text>
+<text x="1033" y="460" font-size="16.5" font-weight="400" fill="#3c4a55" text-anchor="start">retrieved evidence</text>
+<path d="M1033 488H1279" stroke="#c9d1d6" stroke-width="1.2"/>
+<text x="1033" y="512" font-size="14" font-weight="700" fill="#55636d" text-anchor="start" font-style="italic">Methods</text>
+<text x="1033" y="535" font-size="15.5" font-weight="400" fill="#3c4a55" text-anchor="start">rule-based matching,</text>
+<text x="1033" y="556" font-size="15.5" font-weight="400" fill="#3c4a55" text-anchor="start">reranking / cross-encoder,</text>
+<text x="1033" y="577" font-size="15.5" font-weight="400" fill="#3c4a55" text-anchor="start">LLM-assisted verification</text>
+<path d="M1304 464.0H1328" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="1332" y="292" width="290" height="344" rx="12" fill="#ffffff" stroke="#5f8f68" stroke-width="1.4"/>
+<text x="1602" y="322" font-size="12" font-weight="700" fill="#7a8790" text-anchor="end">STEP 5</text>
+<path d="M13 6a5 5 0 1 1 0 10a5 5 0 1 1 0-10z M3 32c0-7 4-11 10-11s10 4 10 11 M26 8a4.5 4.5 0 1 1 0 9 M27 21c5 1 7 5 7 11" fill="none" stroke="#2f6b45" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(1354 310)"/>
+<text x="1354" y="384" font-size="21" font-weight="700" fill="#1f2a33" text-anchor="start">Clinician validation</text>
+<text x="1354" y="416" font-size="16.5" font-weight="400" fill="#3c4a55" text-anchor="start">Review a stratified sample</text>
+<text x="1354" y="438" font-size="16.5" font-weight="400" fill="#3c4a55" text-anchor="start">to assess accuracy and</text>
+<text x="1354" y="460" font-size="16.5" font-weight="400" fill="#3c4a55" text-anchor="start">inter-rater agreement</text>
+<path d="M1354 488H1600" stroke="#c9d1d6" stroke-width="1.2"/>
+<text x="1354" y="512" font-size="14" font-weight="700" fill="#55636d" text-anchor="start" font-style="italic">Methods</text>
+<text x="1354" y="535" font-size="15.5" font-weight="400" fill="#3c4a55" text-anchor="start">expert annotation</text>
+<text x="1354" y="556" font-size="15.5" font-weight="400" fill="#3c4a55" text-anchor="start">and adjudication</text>
+<rect x="1023" y="648" width="266" height="0" fill="none"/>
+<rect x="1025" y="586" width="262" height="40" rx="10" fill="#d5e4f5" stroke="#9db7d9"/>
+<text x="1156.0" y="603" font-size="13.5" font-weight="400" fill="#2d5487" text-anchor="middle" font-style="italic">retrieval-augmented verification</text>
+<text x="1156.0" y="620" font-size="13.5" font-weight="400" fill="#2d5487" text-anchor="middle" font-style="italic">(not a generative RAG pipeline)</text>
+<path d="M840 656V680" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="608" y="684" width="464" height="42" rx="12" fill="#eceff2" stroke="#c9d0d6"/>
+<text x="840.0" y="712.0" font-size="19" font-weight="700" fill="#1f2a33" text-anchor="middle">Evidence status assigned to each claim</text>
+<path d="M840 726V740" fill="none" stroke="#33414c" stroke-width="2"/>
+<path d="M452 740H1232" fill="none" stroke="#33414c" stroke-width="2"/>
+<path d="M452 740V756" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="339.0" y="760" width="226" height="44" rx="12" fill="#e5f3e6" stroke="#6aa874"/>
+<text x="452.0" y="789.0" font-size="18" font-weight="700" fill="#1f2a33" text-anchor="middle">Supported</text>
+<path d="M712 740V756" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="594.0" y="760" width="236" height="44" rx="12" fill="#fbe4e2" stroke="#c9776e"/>
+<text x="712.0" y="789.0" font-size="18" font-weight="700" fill="#1f2a33" text-anchor="middle">Contradicted</text>
+<path d="M972 740V756" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="849.0" y="760" width="246" height="44" rx="12" fill="#fbf1d9" stroke="#c9a24f"/>
+<text x="972.0" y="789.0" font-size="18" font-weight="700" fill="#1f2a33" text-anchor="middle">Insufficient evidence</text>
+<path d="M1232 740V756" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="1119.0" y="760" width="226" height="44" rx="12" fill="#eceeef" stroke="#9aa3a9"/>
+<text x="1232.0" y="789.0" font-size="18" font-weight="700" fill="#1f2a33" text-anchor="middle">Not verifiable</text>
+<path d="M890 804V830" fill="none" stroke="#33414c" stroke-width="2"/>
+<path d="M420 830H1408" fill="none" stroke="#33414c" stroke-width="2"/>
+<path d="M420 830V856" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<path d="M890 830V856" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<path d="M1408 830V856" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="30" y="866" width="146" height="78" rx="12" fill="#f1ebdf" stroke="#d9c9ab"/>
+<text x="103" y="900" font-size="19" font-weight="700" fill="#1f2a33" text-anchor="middle">Research</text>
+<text x="103" y="926" font-size="19" font-weight="700" fill="#1f2a33" text-anchor="middle">outputs</text>
+<rect x="190" y="860" width="460" height="110" rx="12" fill="#fcf7ee" stroke="#c9ad84" stroke-width="1.4"/>
+<path d="M6 32V22 M14 32V16 M22 32V10 M30 32V4" fill="none" stroke="#5a4a2f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(214 896)"/>
+<path d="M270 878v74" stroke="#d9c9ab" stroke-width="1.4"/>
+<text x="290" y="898" font-size="21" font-weight="700" fill="#1f2a33" text-anchor="start">Documentation concordance</text>
+<text x="290" y="926" font-size="16" font-weight="400" fill="#3c4a55" text-anchor="start">How often narrative claims align</text>
+<text x="290" y="947" font-size="16" font-weight="400" fill="#3c4a55" text-anchor="start">with the structured record</text>
+<rect x="660" y="860" width="460" height="110" rx="12" fill="#fcf7ee" stroke="#c9ad84" stroke-width="1.4"/>
+<path d="M18 4l15 7l-15 7l-15-7z M3 18l15 7l15-7 M3 25l15 7l15-7" fill="none" stroke="#5a4a2f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(684 896)"/>
+<path d="M740 878v74" stroke="#d9c9ab" stroke-width="1.4"/>
+<text x="760" y="898" font-size="21" font-weight="700" fill="#1f2a33" text-anchor="start">Discordance taxonomy</text>
+<text x="760" y="926" font-size="16" font-weight="400" fill="#3c4a55" text-anchor="start">Common mismatch types and</text>
+<text x="760" y="947" font-size="16" font-weight="400" fill="#3c4a55" text-anchor="start">likely causes</text>
+<rect x="1130" y="860" width="520" height="110" rx="12" fill="#fcf7ee" stroke="#c9ad84" stroke-width="1.4"/>
+<path d="M18 4v28 M10 32h16 M5 10h26 M5 10l-4 10h8z M31 10l-4 10h8z M1 20c1 3 7 3 8 0 M27 20c1 3 7 3 8 0" fill="none" stroke="#5a4a2f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(1154 896)"/>
+<path d="M1210 878v74" stroke="#d9c9ab" stroke-width="1.4"/>
+<text x="1230" y="898" font-size="21" font-weight="700" fill="#1f2a33" text-anchor="start">Impact on LLM evaluation</text>
+<text x="1230" y="926" font-size="16" font-weight="400" fill="#3c4a55" text-anchor="start">How reference-summary errors may</text>
+<text x="1230" y="947" font-size="16" font-weight="400" fill="#3c4a55" text-anchor="start">affect benchmark conclusions</text>
+</svg>

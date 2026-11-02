@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 860" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Explainable brain tumor decision-support framework</title>
+<desc id="d">Brain MRI scans pass through a shared VGG16 encoder into three branches: a U-Net decoder producing a segmentation mask, a classifier head producing a tumor label, and XAI inputs (FastSHAP, Guided Backpropagation, Occlusion Sensitivity) feeding the novel ShapDensity overlay. A constrained LLM summarizes these structured outputs into a structured clinical report for decision support only.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#33414c"/></marker></defs>
+<rect width="1680" height="860" fill="#ffffff"/>
+<rect x="560" y="28" width="560" height="86" rx="12" fill="#eef4fa" stroke="#7d9cbc" stroke-width="1.5"/>
+<path d="M3 11V3h8 M25 3h8v8 M33 25v8h-8 M11 33H3v-8 M18 9c-6 0-9 4-9 9s3 9 9 9s9-4 9-9s-3-9-9-9z M18 13v10 M13 18h10" fill="none" stroke="#2f4858" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(673.3 53.0)"/>
+<text x="731.3" y="67.0" font-size="22" font-weight="700" fill="#1f2a33" text-anchor="start">Brain MRI scans</text>
+<text x="731.3" y="93.0" font-size="16" font-weight="400" fill="#3c4a55" text-anchor="start">Input images for each patient scan</text>
+<path d="M840 114V148" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="40" y="152" width="1600" height="88" rx="12" fill="#f4f6f8" stroke="#8c9aa3" stroke-width="1.4"/>
+<path d="M18 4l15 7l-15 7l-15-7z M3 18l15 7l15-7 M3 25l15 7l15-7" fill="none" stroke="#2f4858" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(523.45 178.0)"/>
+<text x="581.45" y="192.0" font-size="22" font-weight="700" fill="#1f2a33" text-anchor="start">VGG16 encoder backbone</text>
+<text x="581.45" y="218.0" font-size="16" font-weight="400" fill="#3c4a55" text-anchor="start">Transfer learning · one shared feature extractor for all three branches</text>
+<path d="M840 240V264" fill="none" stroke="#33414c" stroke-width="2"/>
+<path d="M290 264H1390" fill="none" stroke="#33414c" stroke-width="2"/>
+<path d="M290 264V292" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<path d="M840 264V292" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<path d="M1390 264V292" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="40" y="296" width="500" height="100" rx="12" fill="#e8f4ec" stroke="#5f9a70" stroke-width="1.5"/>
+<text x="520" y="322" font-size="12" font-weight="700" fill="#5f9a70" text-anchor="end" letter-spacing="1">ENGINEERING EXTENSION</text>
+<path d="M4 4v18a14 14 0 0 0 28 0V4 M4 10h6 M26 10h6 M4 18h6 M26 18h6" fill="none" stroke="#2f6b45" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(64 332.0)"/>
+<text x="122" y="350.0" font-size="21" font-weight="700" fill="#22402a" text-anchor="start">U-Net decoder</text>
+<text x="122" y="376.0" font-size="15.5" font-weight="400" fill="#3c4a55" text-anchor="start">Segmentation branch</text>
+<rect x="590" y="296" width="500" height="100" rx="12" fill="#f4f6f8" stroke="#8c9aa3" stroke-width="1.4"/>
+<text x="1070" y="322" font-size="12" font-weight="700" fill="#8c9aa3" text-anchor="end" letter-spacing="1">EXISTING METHOD</text>
+<path d="M4 4h14l15 15l-14 14L4 18z M11 11h.5" fill="none" stroke="#2f4858" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(614 332.0)"/>
+<text x="672" y="350.0" font-size="21" font-weight="700" fill="#1f2a33" text-anchor="start">Classifier head</text>
+<text x="672" y="376.0" font-size="15.5" font-weight="400" fill="#3c4a55" text-anchor="start">Tumor type classification</text>
+<rect x="1140" y="296" width="500" height="100" rx="12" fill="#f4f6f8" stroke="#8c9aa3" stroke-width="1.4"/>
+<text x="1620" y="322" font-size="12" font-weight="700" fill="#8c9aa3" text-anchor="end" letter-spacing="1">EXISTING METHODS</text>
+<path d="M2 18c4-8 10-12 16-12s12 4 16 12c-4 8-10 12-16 12S6 26 2 18z M18 12a6 6 0 1 1 0 12a6 6 0 1 1 0-12z" fill="none" stroke="#2f4858" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(1164 332.0)"/>
+<text x="1222" y="350.0" font-size="21" font-weight="700" fill="#1f2a33" text-anchor="start">XAI inputs</text>
+<text x="1222" y="376.0" font-size="15.5" font-weight="400" fill="#3c4a55" text-anchor="start">FastSHAP · Guided Backprop · Occlusion</text>
+<path d="M290 396V428" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<path d="M840 396V428" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<path d="M1390 396V428" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="40" y="432" width="500" height="100" rx="12" fill="#e8f4ec" stroke="#5f9a70" stroke-width="1.5"/>
+<path d="M18 4c8 0 14 6 14 14s-6 14-14 14S4 26 4 18S10 4 18 4z" fill="none" stroke="#2f6b45" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4" transform="translate(64 468.0)"/>
+<path d="M18 12c3 0 6 3 6 6s-3 6-6 6s-6-3-6-6s3-6 6-6z" fill="none" stroke="#2f6b45" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(64 468.0)"/>
+<text x="122" y="486.0" font-size="21" font-weight="700" fill="#22402a" text-anchor="start">Segmentation mask</text>
+<text x="122" y="512.0" font-size="15.5" font-weight="400" fill="#3c4a55" text-anchor="start">Pixel-level tumor boundary</text>
+<rect x="590" y="432" width="500" height="100" rx="12" fill="#f4f6f8" stroke="#8c9aa3" stroke-width="1.4"/>
+<path d="M18 3a15 15 0 1 1 0 30a15 15 0 1 1 0-30z M11 18l5 5l9-10" fill="none" stroke="#2f4858" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(614 468.0)"/>
+<text x="672" y="486.0" font-size="21" font-weight="700" fill="#1f2a33" text-anchor="start">Tumor label</text>
+<text x="672" y="512.0" font-size="15.5" font-weight="400" fill="#3c4a55" text-anchor="start">Predicted type + confidence</text>
+<rect x="1140" y="432" width="500" height="100" rx="12" fill="#ece8fb" stroke="#6a55c8" stroke-width="2.4"/>
+<text x="1620" y="458" font-size="12" font-weight="700" fill="#6a55c8" text-anchor="end" letter-spacing="1">NOVEL CONTRIBUTION</text>
+<path d="M18 3l4.5 9.5L33 14l-7.5 7l2 10.5L18 26.5L8.5 31.5l2-10.5L3 14l10.5-1.5z" fill="none" stroke="#4b37a8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(1164 468.0)"/>
+<text x="1222" y="486.0" font-size="21" font-weight="700" fill="#2e2170" text-anchor="start">ShapDensity ★</text>
+<text x="1222" y="512.0" font-size="15.5" font-weight="400" fill="#3c4a55" text-anchor="start">Dense explanation map, bounded by edges</text>
+<path d="M290 532V560" fill="none" stroke="#33414c" stroke-width="2"/>
+<path d="M1390 532V560" fill="none" stroke="#33414c" stroke-width="2"/>
+<path d="M290 560H1390" fill="none" stroke="#33414c" stroke-width="2"/>
+<path d="M840 532V560" fill="none" stroke="#33414c" stroke-width="2"/>
+<path d="M840 560V592" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="240" y="596" width="1200" height="92" rx="12" fill="#fbf1e2" stroke="#c99a52" stroke-width="1.5"/>
+<path d="M4 6h28v18H14l-8 7v-7H4z M10 12h16 M10 18h10" fill="none" stroke="#8a5a17" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(499.15000000000003 624.0)"/>
+<text x="557.1500000000001" y="638.0" font-size="22" font-weight="700" fill="#5a3a0c" text-anchor="start">Constrained LLM summarizer</text>
+<text x="557.1500000000001" y="664.0" font-size="16" font-weight="400" fill="#3c4a55" text-anchor="start">Reads only the structured outputs above · never makes an autonomous diagnosis</text>
+<path d="M840 688V722" fill="none" stroke="#33414c" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="440" y="726" width="800" height="92" rx="12" fill="#ffffff" stroke="#4a5560" stroke-width="2"/>
+<path d="M6 2h16l8 8v24H6z M22 2v8h8 M11 16h14 M11 22h14 M11 28h10" fill="none" stroke="#2f4858" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="translate(547.75 754.0)"/>
+<text x="605.75" y="768.0" font-size="22" font-weight="700" fill="#1f2a33" text-anchor="start">Structured clinical report</text>
+<text x="605.75" y="794.0" font-size="16" font-weight="400" fill="#3c4a55" text-anchor="start">Decision support for clinicians · clearly labeled, not autonomous</text>
+</svg>
